@@ -1,0 +1,129 @@
+@import url(../../App.css);
+
+.headerLogoSection {
+  padding: 2rem;
+}
+
+.headerLogoSection .logoRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Add relative positioning */
+}
+
+
+.headerLogoSection .logoCol img {
+  max-width: 120px;
+}
+
+.headerLogoSection .explanations {
+  font-size: 12px;
+  position: absolute; /* Change from fixed to absolute */
+  left: 57%; /* Adjusts the horizontal position of the explanations */
+  top: 3%; /* Adjusts the vertical position of the explanations */
+}
+
+@media (max-width: 992px) {
+  .headerLogoSection .explanations {
+    display: none;
+  }
+}
+
+
+/* ===
+HEADER SECTION
+=== */
+
+
+.headerSection .navbar {
+  padding: 1rem 2rem;
+  background-color: var(--bg-color-3) !important;
+  border-top: 4px solid #000;
+
+}
+
+.headerSection .navbar .navbar-brand img {
+  max-width: 80px;
+}
+
+.headerSection .navbar .nav-link {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-weight:700; color: #000;
+}
+
+.headerSection .navbar .nav-link:hover {
+  opacity: .7;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  border: 0;
+  outline: 0;
+  box-shadow:10lvb
+}
+
+@media (max-width: 992px) {
+  .headerSection .navbar {
+    text-align: center;
+  }
+
+  .headerSection .navbar .nav-link {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
+
+
+
+
+/* ===
+OFFCANVAS SECTION
+=== */
+.offcanvas {
+  min-height: 600px;
+  background-color: #f5f5f5; /* Light grey background color */
+  border-radius: 15px; /* Added for rounded corners */
+  border: 4px solid #000; /* Increased border width for visibility */
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.5); /* Increased shadow for more visibility */
+  padding: 20px; /* Added some padding */
+  margin: 50px 100px; /* Added margin at the top to lower the dropdown and on the sides to make it more narrow */
+
+}
+
+.block-cat {
+  margin-bottom: 20px;
+}
+
+.block-title {
+  margin-bottom: 15px;
+  padding: 20px; 
+}
+
+.title-link-canvas {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-transform: none; /* Titles are typically not uppercased in card designs */
+  background-color: transparent; /* Removed the background color */
+  border: 0;
+}
+
+.sublink-canvas {
+  color: #777; /* Lighter color for the subtitle */
+  text-decoration: none;
+  background-color: transparent; /* Removed the background color */
+  border: 0;
+  text-align: left;
+  font-size: 1.2rem; /* Smaller font size */
+}
+
+.sublink-canvas:hover {
+  text-decoration: underline;
+}
+

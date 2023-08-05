@@ -1,0 +1,64 @@
+.component {
+  position: relative;
+  padding: 10px 16px;
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 540;
+  letter-spacing: 0;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: center;
+  background: transparent;
+  isolation: isolate;
+  border: 0;
+  color: black; /* Default color set to black */
+}
+
+.component:hover::after,
+.component.active::after {
+  cursor: pointer;
+  background-color: #da9ef2;
+  content: "";
+  z-index: -2;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  left: 4px;
+  top: 4px;
+}
+
+.component:hover::before,
+.component.active::before {
+  background-color: #f7cc6c;
+  border-radius: 4px;
+  border: 2px solid black;
+  position: absolute;
+  inset: 0px;
+  content: "";
+  z-index: -1;
+  right: 4px;
+  bottom: 4px;
+}
+
+/* Media Queries */
+@media (min-width: 1200px) {
+  .component {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .component {
+    padding: 8px 12px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .component {
+    padding: 10px 16px;
+    font-size: 20px;
+  }
+}
