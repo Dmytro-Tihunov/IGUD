@@ -30,3 +30,4 @@ function Headerlogo() {
     </div>
   );
 }
+export default Headerlogo;
