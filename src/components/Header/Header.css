@@ -1,5 +1,7 @@
 @import url(../../App.css);
 
+@import url(../../App.css);
+
 .headerLogoSection {
   padding: 2rem;
 }
@@ -21,6 +23,8 @@
   position: absolute; /* Change from fixed to absolute */
   left: 57%; /* Adjusts the horizontal position of the explanations */
   top: 3%; /* Adjusts the vertical position of the explanations */
+  display: flex;
+  flex-direction: column;
 }
 
 @media (max-width: 992px) {
@@ -28,7 +32,6 @@
     display: none;
   }
 }
-
 
 /* ===
 HEADER SECTION
