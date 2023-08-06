@@ -12,7 +12,7 @@ function Home() {
     <div className="homePage">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>IGU - 1500+ AI Tools To Explore All Your Needs! </title>
+        <title>IGU - 1500+ AI Tools To Explore All Your AI Needs! </title>
       </Helmet>
       <Hero resultRef={resultRef} />
       <Hot />
