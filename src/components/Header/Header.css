@@ -1,35 +1,32 @@
 @import url(../../App.css);
 
-.headerLogoSection {
-  padding: 3rem;
-}
-
 .headerLogoSection .logoRow {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;  /* Push children to the extremes */
   align-items: center;
-  position: relative; /* Add relative positioning */
+  width: 70%;  /* Adjust this width if needed */
+  margin: 0 auto;  /* Center the logoRow */
 }
-
 
 .headerLogoSection .logoCol img {
   max-width: 120px;
+  display: block;
 }
 
 .headerLogoSection .explanations {
   font-size: 12px;
-  position: absolute; /* Change from fixed to absolute */
-  left: 57%; /* Adjusts the horizontal position of the explanations */
-  top: 3%; /* Adjusts the vertical position of the explanations */
-  display: flex;
-  flex-direction: column;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) { 
+  .headerLogoSection .logoCol img {
+    max-width: 80px;
+  }
+
   .headerLogoSection .explanations {
-    display: none;
+    font-size: 10px;
   }
 }
+
 
 /* ===
 HEADER SECTION
