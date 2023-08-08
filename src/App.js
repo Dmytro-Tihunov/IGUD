@@ -13,6 +13,8 @@ import Error from "./pages/Error";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import useStore from "./store";
 import { useAuth } from "./context/AuthProvider";
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const { getCategories, getTools, getUsersScores } = useStore();
@@ -56,6 +58,7 @@ function App() {
         </Switch>
         <Footer />
       </BrowserRouter>
+      <Analytics />
     </div>
   );
 }

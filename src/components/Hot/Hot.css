@@ -2,7 +2,7 @@
 
 .hotSection {
   background-color: var(--bg-two);
-  padding: 0rem 50px;
+  padding: 0rem 50;
   border-bottom: 4px solid #000;
   padding-bottom: 50px;
 }
@@ -10,7 +10,7 @@
 .image-hot {
   width: 100%;
   height: 430px;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 }
 
@@ -36,7 +36,6 @@
 }
 
 .hotSection .carouselRow {
-  display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem 4rem;
@@ -70,6 +69,12 @@
 .carousel-control-next,
 .carousel-control-prev {
   width: 5%;
+}
+
+@media (max-width: 992px) {
+  .hotSection .sectionTitle {
+    font-size: 2.2rem;
+  }
 }
 
 .category-button {

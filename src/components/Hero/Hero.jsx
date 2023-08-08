@@ -34,12 +34,12 @@ function Hero({ resultRef }) {
           <div className="col-12 col-lg-6 col1">
             <div className="content">
               <h1 className="sectionTitle">
-                1500+ AI Tools To <br /> Explore All Your <br />
-                Needs! 🤪
+                1500+ AI Tools<br />Search For The Best AI Websites <br />
+                🤖 
               </h1>
-              <h5 className="subTitle">Filter by Price, Category + More</h5>
+              <h5 className="subTitle"></h5>
               <p className="text">
-                Increase your potential with AI, it’s all here. We got you.
+              10x Your Productivity with AI and and Be Future-Ready.
               </p>
               <Searchbox
                 handleChange={onSearchTermChange}
