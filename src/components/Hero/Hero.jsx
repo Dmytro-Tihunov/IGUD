@@ -34,16 +34,16 @@ function Hero({ resultRef }) {
           <div className="col-12 col-lg-6 col1">
             <div className="content">
               <h1 className="sectionTitle">
-                1500+ AI Tools<br />Search For The Best AI Websites <br />
-                🤖 
+                1500+ AI Tools<br /> <br /> 
+                Search For The Best AI Websites
               </h1>
               <h5 className="subTitle"></h5>
               <p className="text">
-              10x Your Productivity with AI and and Be Future-Ready.
+              10x Your Productivity with AI and Be Future-Ready.
               </p>
               <Searchbox
                 handleChange={onSearchTermChange}
-                placeholder="Search here"
+                placeholder="Type in AI website usecase, category, or function..."
                 search={searchTerm}
               />
               <div className="heroButton">

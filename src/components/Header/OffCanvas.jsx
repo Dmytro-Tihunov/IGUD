@@ -6,9 +6,8 @@ import Col from "react-bootstrap/Col";
 import "./Header.css";
 import useStore from "../../store";
 
-const OffCanvasHeader = ({ ...props }) => {
+const OffCanvasHeader = (props) => {
   const { subcategories, isCategoriesLoading } = useStore();
-
   const navigate = useHistory();
 
   function transformUrl(url) {
@@ -31,13 +30,10 @@ const OffCanvasHeader = ({ ...props }) => {
     >
       <rect x="0" y="13" rx="4" ry="4" width="100%" height="31" />
       <rect x="0" y="56" rx="4" ry="4" width="100%" height="1" />
-      <rect x="0" y="75" rx="4" ry="4" width="45%" height="24" />
-      <rect x="50%" y="75" rx="4" ry="4" width="50%" height="24" />
-      <rect x="0" y="110" rx="4" ry="4" width="45%" height="24" />
-      <rect x="50%" y="110" rx="4" ry="4" width="50%" height="24" />
-      <rect x="0" y="145" rx="4" ry="4" width="45%" height="24" />
-      <rect x="50%" y="145" rx="4" ry="4" width="50%" height="24" />
-      <rect x="0" y="180" rx="4" ry="4" width="45%" height="24" />
+      <rect x="0" y="75" rx="4" ry="4" width="100%" height="24" />
+      <rect x="0" y="110" rx="4" ry="4" width="100%" height="24" />
+      <rect x="0" y="145" rx="4" ry="4" width="100%" height="24" />
+      <rect x="0" y="180" rx="4" ry="4" width="100%" height="24" />
     </ContentLoader>
   );
 
@@ -64,21 +60,18 @@ const OffCanvasHeader = ({ ...props }) => {
                       {category.name}
                     </button>
                   </div>
-                  {category?.subcategories ? (
-                    <Row>
-                      {category?.subcategories.map((subCategory, index) => (
-                        <Col xs={12} md={6} key={index}>
-                          <button
-                            className="sublink-canvas"
-                            onClick={() => navigateToCategoryPage(subCategory)}
-                          >
-                            {subCategory}
-                          </button>
-                        </Col>
+                  {category?.subcategories && (
+                    <div>
+                      {category.subcategories.map((subCategory, index) => (
+                        <button
+                          className="sublink-canvas"
+                          onClick={() => navigateToCategoryPage(subCategory)}
+                          key={index}
+                        >
+                          {subCategory}
+                        </button>
                       ))}
-                    </Row>
-                  ) : (
-                    <></>
+                    </div>
                   )}
                 </Col>
               ))}

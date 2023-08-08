@@ -28,7 +28,7 @@ function Review() {
               />
               <ReviewCard
                 Title="Be Seen"
-                Description="If you would like to be featured on IGU's HOT 3 section please feel free reach out"
+                Description="If you would like to be featured on IGU's HOT 3 section please feel free to reach out"
               />
             </Row>
           </Col>
