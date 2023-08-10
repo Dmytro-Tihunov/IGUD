@@ -18,7 +18,7 @@ const googleLogin = () => {
 
 const passwordReset = (email) =>
   supabase.auth.resetPasswordForEmail(email, {
-    redirectTo: "http://localhost:3000/update-password",
+    redirectTo: "https://theigu.com/update-password",
   });
 
 const updatePassword = (updatedPassword) =>
